@@ -1,5 +1,5 @@
 import React from 'react';
-import CompanyView from './Company';
+import CompanyView from './Company/Company';
 
 
 function App() {
