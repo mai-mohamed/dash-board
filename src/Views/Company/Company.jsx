@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import clsx from "clsx";
 import MenuIcon from "@material-ui/icons/Menu";
 import MailIcon from "@material-ui/icons/Mail";
@@ -21,6 +23,7 @@ import {
 } from "@material-ui/core";
 import { useStyles } from "./CompanyUtils";
 import Company from "../../Components/Company/Company";
+import CompanyRoutes from "../../Routes";
 
 function CompanyView() {
   const classes = useStyles();
@@ -97,7 +100,7 @@ function CompanyView() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-
+       
         <Company />
       </main>
     </div>
